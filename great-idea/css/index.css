@@ -107,6 +107,13 @@ nav a {
 
 }
 
+nav a:hover {
+	background-color: yellow;
+	color: black;
+	font-weight: bold;
+	font-size: 2.0rem;
+}
+
 .logo {
 	margin-right: 5px;
 	margin-left: 25px;
@@ -116,21 +123,22 @@ nav a {
 
 .top {
 	margin: 0 auto;
-	padding: 0px 0px 78px 70px;
 	width: 880px;
+	height: 510px;
 	border-bottom: 1px solid black;
 	margin-top: 80px;
-}
-
-.top img {
-	padding-top: 50px;
-	padding-left: 75px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .innovation {
-	display: inline-block;
-	vertical-align: top;
-	margin-top: 110px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 57%;
 }
 
 .innovation h1 {
@@ -145,7 +153,7 @@ nav a {
 	width: 175px;
 	border: 1px solid black;
 	margin: 0 auto;
-	padding: 6px 10px;
+	padding: 8px 10px;
 	font-size: 1.7rem;
 	background-color: white;
 	-webkit-animation: myAnimation 3s infinite;
@@ -171,10 +179,11 @@ nav a {
 	margin-top: 38px;
 	padding-bottom: 38px;
 	border-bottom: 1px solid grey;
+	display: flex;
+	flex-direction: column;
 }
 
 .text-box {
-	display: inline-block;
 	box-sizing: border-box;
 }
 
@@ -191,20 +200,27 @@ nav a {
 
 .top-mid {
 	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .top-mid .text-box {
-	width: 49.85%;
+	width: 49%;
 }
 
 .middle-img {
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 38px;
+}
+
+.bottom-mid {
+	display: flex;
+	justify-content: space-between;
 }
 
 .bottom-mid .text-box {
 	width: 32%;
-	margin-right: 1%;
+	/* margin-right: 1%; */
 }
 
 address {
